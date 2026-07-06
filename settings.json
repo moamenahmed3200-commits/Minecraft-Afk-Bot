@@ -1,0 +1,88 @@
+{
+  "name": "AFK Bot",
+  "server": {
+    "ip": "memomoka.aternos.me",
+    "port": 48147,
+    "version": "1.20.4",
+    "try-creative": true
+  },
+  "bot-account": {
+    "username": "Steve123",
+    "password": "",
+    "type": "offline"
+  },
+  "accounts": [
+    {"username": "Steve123", "password": "", "type": "offline"},
+    {"username": "Alex456", "password": "", "type": "offline"},
+    {"username": "Miner789", "password": "", "type": "offline"},
+    {"username": "Builder001", "password": "", "type": "offline"},
+    {"username": "Crafty002", "password": "", "type": "offline"}
+  ],
+  "accountRotation": {
+    "enabled": true,
+    "interval": 28800000,
+    "onBan": true,
+    "onKick": false
+  },
+  "sessionRotation": {
+    "enabled": true,
+    "interval": 43200000
+  },
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "yourpassword"
+    },
+    "chat-messages": {
+      "enabled": true,
+      "messages": ["Hello!", "How's everyone?", "Building stuff", "Mining ores"],
+      "repeat": true,
+      "repeat-delay": 60
+    },
+    "anti-afk": {
+      "enabled": true,
+      "sneak": false
+    },
+    "auto-reconnect": true,
+    "auto-reconnect-delay": 3000,
+    "max-reconnect-delay": 30000
+  },
+  "movement": {
+    "enabled": true,
+    "circle-walk": {
+      "enabled": false,
+      "radius": 5,
+      "speed": 5000
+    },
+    "random-jump": {
+      "enabled": false,
+      "interval": 30000
+    },
+    "look-around": {
+      "enabled": true,
+      "interval": 15000
+    }
+  },
+  "modules": {
+    "avoidMobs": false,
+    "combat": false,
+    "beds": false,
+    "chat": true
+  },
+  "combat": {
+    "attack-mobs": false,
+    "auto-eat": false
+  },
+  "beds": {
+    "place-night": false
+  },
+  "discord": {
+    "enabled": false,
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK",
+    "events": {
+      "connect": false,
+      "disconnect": false,
+      "chat": false
+    }
+  }
+}
